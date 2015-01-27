@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kana Strokes</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_kana_introduction">KanaIntroductionActivity</string>
+    <string name="title_activity_drills">DrillsActivity</string>
+    <string name="title_activity_reviews">ReviewsActivity</string>
+    <string name="title_activity_lessons">LessonsActivity</string>
+    <string name="title_activity_lessons_activity_page2">LessonsActivityPage2</string>
+
+</resources>

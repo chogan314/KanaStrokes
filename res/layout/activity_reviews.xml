@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4" >
+
+        <FrameLayout
+            android:id="@+id/reviewsKanaStrokesFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/reviewsKanaReadingsText"
+            android:layout_toStartOf="@+id/reviewsKanaReadingsText" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/reviewsKanaReadingsText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/reviewsPassButton"
+            android:layout_below="@+id/reviewsFailButton"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/reviewsPassButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="pass"
+            android:visibility="invisible" />
+        
+        <Button
+            android:id="@+id/reviewsFailButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="fail"
+            android:visibility="invisible" />
+        
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/reviewsKanaDrawingFrame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6" >
+    </FrameLayout>
+
+</LinearLayout>

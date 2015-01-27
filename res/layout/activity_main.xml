@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/lessonsButton"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/drillsButton"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignRight="@+id/lessonsButton"
+        android:layout_alignEnd="@+id/lessonsButton"
+        android:layout_below="@+id/lessonsButton"
+        android:layout_marginTop="10dp"  />
+
+    <Button
+        android:id="@+id/reviewsButton"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignRight="@+id/drillsButton"
+        android:layout_alignEnd="@+id/drillsButton"
+        android:layout_below="@+id/drillsButton"
+        android:layout_marginTop="10dp" />
+    
+    <Button 
+        android:id="@+id/refreshButton"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignRight="@+id/reviewsButton"
+        android:layout_alignEnd="@+id/reviewsButton"
+        android:layout_below="@+id/reviewsButton"
+        android:layout_marginTop="10dp"
+        android:text="Refresh" />
+
+</RelativeLayout>
